@@ -6,7 +6,7 @@ function TotalContainer() {
   const total = good + neutral + bad;
 
   return (
-    <div className="flex items-center justify-between bg-[#f7ece1] border-2 border-[#82512D] shadow-xl rounded-xl w-[90%] text-[#82512D] inter py-2 px-4">
+    <div className="flex items-center justify-between bg-[#f7ece1] border-2 border-[#82512D] shadow rounded-xl w-[90%] text-[#82512D] inter py-2 px-4">
       <h2 className="font-bold">Total of Feedbacks:</h2>
       <p>{total}</p>
     </div>

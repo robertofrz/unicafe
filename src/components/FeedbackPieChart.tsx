@@ -13,7 +13,7 @@ function FeedbackPieChart() {
   ];
 
   return (
-    <div className=" bg-[#f7ece1] neutral-100 border-2 border-[#82512D] shadow-xl rounded-xl w-[90%] h-[230px] pt-2">
+    <div className=" bg-[#f7ece1] border-2 border-[#82512D] shadow rounded-xl w-[90%] h-[230px]">
       <ResponsiveContainer>
         <PieChart>
           <Pie

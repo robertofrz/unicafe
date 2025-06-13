@@ -1,6 +1,5 @@
 import { useFeedback } from "../context/FeedbackContext";
-import Button from "./Button";
-
+import Button from "./FeedbackButton";
 
 function FeedbackButtons() {
   const { good, setGood, neutral, setNeutral, bad, setBad } = useFeedback();
