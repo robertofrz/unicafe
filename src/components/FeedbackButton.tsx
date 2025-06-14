@@ -6,7 +6,7 @@ type ButtonProps = {
 
 function Button({ onClick, imgPath, altText }: ButtonProps) {
   return (
-    <button className="cursor-pointer" onClick={onClick}>
+    <button className="cursor-pointer" title={imgPath} onClick={onClick}>
       <img
         className="w-20 border-neutral-400"
         src={`/${imgPath}.png`}

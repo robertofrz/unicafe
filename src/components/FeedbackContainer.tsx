@@ -5,20 +5,23 @@ function FeedbackButtons() {
   const { good, setGood, neutral, setNeutral, bad, setBad } = useFeedback();
 
   return (
-    <div className="flex items-center justify-evenly gap-2 bg-[#f7ece1] border-2 border-[#82512D] shadow-xl p-2 rounded-xl w-[90%]">
+    <div className="flex items-center justify-evenly gap-2 bg-[#fcf3ea] border border-[#5a38208a] shadow-lg p-2 rounded-xl w-[90%]">
       <Button
         onClick={() => setGood(good + 1)}
-        imgPath="positive"
+        imgPath="Positive"
         altText="Green cup with a happy face – positive feedback"
       />
+      <hr className="w-px h-14 bg-neutral-300 border-0" />
+
       <Button
         onClick={() => setNeutral(neutral + 1)}
-        imgPath="neutral"
+        imgPath="Neutral"
         altText="Yellow cup with a neutral face – neutral feedback"
       />
+      <hr className="w-px h-14 bg-neutral-300 border-0" />
       <Button
         onClick={() => setBad(bad + 1)}
-        imgPath="negative"
+        imgPath="Negative"
         altText="Red cup with an angry face – negative feedback"
       />
     </div>

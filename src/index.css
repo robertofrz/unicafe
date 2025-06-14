@@ -2,16 +2,12 @@
 @import "tailwindcss";
 
 body {
-  background-image: url("/bg-coffee-beans.png");
-
-  background-position: center;
-  background-repeat: repeat;
+  background-color: #301909;
 }
 
 #root {
   @apply min-h-screen flex items-center justify-center;
 }
-
 
 @font-face {
   font-family: "coffee";
@@ -23,10 +19,7 @@ body {
   font-family: "coffee", sans-serif;
   text-shadow: 2px 2px 4px rgba(63, 31, 1, 0.479);
 }
-.expresso {
-  font-family: "expresso", sans-serif;
-  text-shadow: 2px 2px 4px rgba(63, 31, 1, 0.479);
-}
+
 .inter {
   font-family: "Inter", sans-serif;
 }

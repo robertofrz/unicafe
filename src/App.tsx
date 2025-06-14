@@ -4,15 +4,16 @@ import FeedbackButtons from "./components/FeedbackContainer";
 
 function App() {
   return (
-    <div className="flex flex-col items-center justify-between gap-2 sm:w-[400px] w-[90vw] sm:h-[600px] h-[70vh] bg-[#e9d8c7] rounded-lg p-3 border-t-6 border-b-6 border-[#82512D] shadow-lg text-center text-[#6e4527]">
+    <div className="flex flex-col items-center justify-between gap-2 sm:w-[400px] w-[90vw] sm:h-[600px] h-[70vh] bg-[#e0cab3] rounded-xl p-3 shadow-xl text-center text-[#5a3820]">
       <h1 className="coffee text-5xl -mb-2">Unicafe o</h1>
-      <p className="inter opacity-70 font-bold mb-1">
-        Help us serve you better! Give your feedback about our coffee shop.
+      <p className="inter mb-1 ">
+        Help us serve you better! <br /> Give your feedback about our coffee
+        shop.
       </p>
       <FeedbackButtons />
       <FeedbackPieChart />
       <TotalContainer />
-      <p className="inter font-bold text-center">
+      <p className="inter font-bold text-center text-lg">
         Your feedback means a lot. <br /> See you next time!
       </p>
     </div>
