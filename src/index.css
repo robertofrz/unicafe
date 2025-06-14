@@ -2,24 +2,27 @@
 @import "tailwindcss";
 
 body {
-  background-image: url("/bg-coffeeshop.png");
-  background-size: cover;
+  background-image: url("/bg-coffee-beans.png");
+
   background-position: center;
-  background-repeat: no-repeat;
-  background-attachment: fixed;
+  background-repeat: repeat;
 }
 
 #root {
   @apply min-h-screen flex items-center justify-center;
 }
 
+
 @font-face {
-  font-family: "expresso";
-  src: url("./assets/fonts/expresso.ttf") format("truetype");
+  font-family: "coffee";
+  src: url("./assets/fonts/coffee.ttf") format("truetype");
   font-weight: normal;
   font-style: normal;
 }
-
+.coffee {
+  font-family: "coffee", sans-serif;
+  text-shadow: 2px 2px 4px rgba(63, 31, 1, 0.479);
+}
 .expresso {
   font-family: "expresso", sans-serif;
   text-shadow: 2px 2px 4px rgba(63, 31, 1, 0.479);
