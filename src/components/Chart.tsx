@@ -2,19 +2,25 @@ import { PieChart, Pie, Cell, Tooltip, ResponsiveContainer } from "recharts";
 import CustomTooltip from "./CustomToolTip";
 import { useFeedback } from "../context/FeedbackContext";
 
-const COLORS = ["#548c2f", "#ffd449", "#f95738"];
+type FeedbackItem = {
+  name: string;
+  value: number;
+};
 
-function FeedbackPieChart() {
+const COLORS: string[] = ["#548c2f", "#ffd449", "#f95738"];
+
+function Chart() {
   const { good, neutral, bad } = useFeedback();
-  const feedbackData = [
+
+  const feedbackData: FeedbackItem[] = [
     { name: "Positive", value: good },
     { name: "Neutral", value: neutral },
     { name: "Negative", value: bad },
   ];
 
   return (
-    <div className=" bg-[#fcf3ea] border border-[#5a38208a] shadow rounded-xl w-[90%] h-[230px]">
-      <ResponsiveContainer>
+    <div className=" bg-[#fcf3ea] border border-[#5a38208a] shadow rounded-xl w-[95%] h-[230px]">
+      <ResponsiveContainer width="100%" height="100%">
         <PieChart>
           <Pie
             data={feedbackData}
@@ -39,4 +45,4 @@ function FeedbackPieChart() {
   );
 }
 
-export default FeedbackPieChart;
+export default Chart;

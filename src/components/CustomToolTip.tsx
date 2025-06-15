@@ -1,10 +1,7 @@
-type CustomToolTipProps = {
-  active?: boolean;
-  payload?: { name: string; value: number }[];
-};
+import type { TooltipProps } from "recharts";
 
-const CustomTooltip = ({ active, payload }: CustomToolTipProps) => {
-  if (active && payload && payload.length) {
+const CustomTooltip = ({ active, payload }: TooltipProps<number, string>) => {
+  if (active && payload?.length) {
     const data = payload[0];
     return (
       <div className="bg-[#fcf3ea] flex flex-col items-start border border-[#5a38208a] text-[#5a3820] p-3 rounded-xl shadow-lg inter">
